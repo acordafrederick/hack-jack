@@ -1,0 +1,13 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Varela Round', sans-serif;
+	/*background-color: #3B7833;*/
+}
+
+img {
+	opacity: 1;
+}
+
+img:hover {
+	opacity: .7;
+}
