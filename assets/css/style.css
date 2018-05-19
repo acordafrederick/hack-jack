@@ -1,7 +1,6 @@
-* {
+/* * {
 	box-sizing: border-box;
 	font-family: 'Varela Round', sans-serif;
-	/*background-color: #3B7833;*/
 }
 
 img {
@@ -10,4 +9,17 @@ img {
 
 img:hover {
 	opacity: .7;
+} */
+
+* {
+    text-align: center;
+    color: #196F3D;
+}
+
+body {
+    background-color: #52BE80;
+}
+
+.card-header {
+    background-color: #196F3D;
 }
