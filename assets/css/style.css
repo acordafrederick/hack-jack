@@ -1,25 +1,117 @@
-/* * {
-	box-sizing: border-box;
-	font-family: 'Varela Round', sans-serif;
-}
-
-img {
-	opacity: 1;
-}
-
-img:hover {
-	opacity: .7;
-} */
-
 * {
+    /* margin: 0; */
     text-align: center;
-    color: #196F3D;
+    font-family: 'Varela Round', sans-serif;
 }
 
 body {
-    background-color: #52BE80;
+    background-color: #007e33;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* ========== text-col ========== */
+
+.text-col {
+    padding: 5vh 0;
+}
+
+.card {
+    /* margin: 3vh 0; */
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.8);
 }
 
 .card-header {
-    background-color: #196F3D;
+    background-color: #cc0000;
 }
+
+/* ========== card-col ========== */
+
+img {
+    margin: auto;
+    height: 25vw;
+    display: inline-block;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    transform-origin: center;
+    -moz-transform-origin: center;
+    -ms-transform-origin: center;
+    -o-transform-origin: center;
+    -webkit-transform-origin: center;
+}
+
+#clubs {
+    transform: translate(70%, 30%) rotate(-35deg);
+    -moz-transform: translate(70%, 30%) rotate(-35deg);
+    -ms-transform: translate(70%, 30%) rotate(-35deg);
+    -o-transform: translate(70%, 30%) rotate(-35deg);
+    -webkit-transform: translate(70%, 30%) rotate(-35deg);
+}
+
+#diamonds {
+    transform: translate(20%) rotate(-10deg);
+    -moz-transform: translate(20%) rotate(-10deg);
+    -ms-transform: translate(20%) rotate(-10deg);
+    -o-transform: translate(20%) rotate(-10deg);
+    -webkit-transform: translate(20%) rotate(-10deg);
+}
+
+#spades {
+    transform: translate(-20%) rotate(10deg);
+    -moz-transform: translate(-20%) rotate(10deg);
+    -ms-transform: translate(-20%) rotate(10deg);
+    -o-transform: translate(-20%) rotate(10deg);
+    -webkit-transform: translate(-20%) rotate(10deg);
+}
+
+#hearts {
+    transform: translate(-70%, 30%) rotate(30deg);
+    -moz-transform: translate(-70%, 30%) rotate(35deg);
+    -ms-transform: translate(-70%, 30%) rotate(35deg);
+    -o-transform: translate(-70%, 30%) rotate(35deg);
+    -webkit-transform: translate(-70%, 30%) rotate(35deg);
+}
+
+/* ========== media queries =========== */
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    .col-6 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .card {
+        max-width: 40vw;
+        margin: 1vh auto;
+    }
+
+    img {
+        margin: auto;
+        height: 35vw;
+        display: inline-block;
+        box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.8);
+        transform-origin: center;
+        -moz-transform-origin: center;
+        -ms-transform-origin: center;
+        -o-transform-origin: center;
+        -webkit-transform-origin: center;
+    }
+
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    .col-6 {
+        margin: 1vw 0;
+    }
+
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { ... }
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { ..}

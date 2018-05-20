@@ -6,58 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Card Game</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-xl-4 text-col">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-6">
-                            <div class="card">
-                                <div class="card-header text-light">
-                                    NUMBER
-                                </div>
-                                <div class="card-body display-1">&nbsp;</div>
+    <div class="container">
+
+    </div>
+    <div class="container #game-stats">
+        <div class="row main-row">
+            <div class="col-12 text-col">
+                <div class="row">
+                    <div class="col-6 col-sm-6 col-md-3">
+                        <div class="card border-dark">
+                            <div class="card-header border-dark text-light">
+                                NUMBER
                             </div>
+                            <div id="number" class="card-body h3">&nbsp;</div>
                         </div>
-                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-6">
-                            <div class="card">
-                                <div class="card-header text-light">
-                                    SCORE
-                                </div>
-                                <div class="card-body display-1">&nbsp;</div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3">
+                        <div class="card border-dark">
+                            <div class="card-header border-dark text-light">
+                                SCORE
                             </div>
+                            <div id="score" class="card-body h3">&nbsp;</div>
                         </div>
-                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-6">
-                            <div class="card">
-                                <div class="card-header text-light">
-                                    WINS
-                                </div>
-                                <div class="card-body display-1">&nbsp;</div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3">
+                        <div class="card border-dark">
+                            <div class="card-header border-dark text-light">
+                                WINS
                             </div>
+                            <div id="wins" class="card-body h3">&nbsp;</div>
                         </div>
-                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-6">
-                            <div class="card">
-                                <div class="card-header text-light">
-                                    LOSES
-                                </div>
-                                <div class="card-body display-1">&nbsp;</div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3">
+                        <div class="card border-dark">
+                            <div class="card-header border-dark text-light">
+                                LOSSES
                             </div>
+                            <div id="losses" class="card-body h3">&nbsp;</div>
                         </div>
+                    </div>
+                    <div id="message" class="col-12 card-body text-light h3">
+                        Match the Number
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-xl-8">
-                <div class="row card-col">
-                    hello
-                </div>
-                <div class="row alert-col">
-                    hello
-                </div>
-            </div>
         </div>
+    </div>
+    <div id="cards" class="row card-container">
+        <img id="clubs" src="assets/images/clubs.svg" alt="img-thumbnail">
+        <img id="diamonds" src="assets/images/diamonds.svg" alt="img-thumbnail">
+        <img id="spades" src="assets/images/spades.svg" alt="img-thumbnail">
+        <img id="hearts" src="assets/images/hearts.svg" alt="img-thumbnail">
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -65,5 +68,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
 </body>
 </html>
