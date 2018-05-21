@@ -4,70 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="assets/images/CardGameSmLogo.svg" type="image/x-icon">
     <title>Card Game</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <div class="container">
-
-    </div>
-    <div class="container #game-stats">
-        <div class="row main-row">
-            <div class="col-12 text-col">
-                <div class="row">
-                    <div class="col-6 col-sm-6 col-md-3">
-                        <div class="card border-dark">
-                            <div class="card-header border-dark text-light">
-                                NUMBER
-                            </div>
-                            <div id="number" class="card-body h3">&nbsp;</div>
-                        </div>
+        <div class="row">
+            <div class="col-12">
+                <div id="info-container" class="card border-dark">
+                    <div class="card-header border-dark text-light">
+                        THE GAME
+                        <span id="close-info">
+                            <i class="fas fa-times-circle fa-lg text-light"></i>
+                        </span>
                     </div>
-                    <div class="col-6 col-sm-6 col-md-3">
-                        <div class="card border-dark">
-                            <div class="card-header border-dark text-light">
-                                SCORE
-                            </div>
-                            <div id="score" class="card-body h3">&nbsp;</div>
+                    <div class="card-body">
+                        <div class="col-12 h3">
+                                Instructions
                         </div>
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-3">
-                        <div class="card border-dark">
-                            <div class="card-header border-dark text-light">
-                                WINS
-                            </div>
-                            <div id="wins" class="card-body h3">&nbsp;</div>
+                        <div class="container">
+                            <p class="text-center">
+                                Click on the playing cards to know each of its value. Your goal is to increase your "SCORE," matching up the value of the provided "NUMBER." Every matched number increases your "WINS," exceeding the number value increases your "LOSSES." The number and the cards' values change on random each game round.
+                            </p>
+                            <p class="text-center">
+                                The key to racking up wins is to remember each of the cards' values and adding them up correctly.
+                                Unless if you're out of "LUCK," the cards' values won't add up accordingly to match the number. May the odds be with you. Play on!
+                            </p>
+                            <button id="play-btn" type="button" class="btn btn-danger">
+                                    PLAY&nbsp;&nbsp;&nbsp;<i class="fas fa-play"></i>
+                            </button>
                         </div>
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-3">
-                        <div class="card border-dark">
-                            <div class="card-header border-dark text-light">
-                                LOSSES
-                            </div>
-                            <div id="losses" class="card-body h3">&nbsp;</div>
+                        <div id="creator-links">
+                            <p id="copyright text-center">
+                                &copy; Frederick Acorda 2018
+                            </p>
+                            <a href="https://www.linkedin.com/in/acordafrederick/" target="_blank">
+                                <i class="fab fa-linkedin fa-2x text-danger"></i>
+                            </a>
+                            <a href="https://acordafrederick.github.io/" target="_blank">
+                                <!-- <i class="fas fa-globe fa-2x text-danger"></i> -->
+                                <img src="assets/images/icon.svg" alt="Frederick Acorda Icon">
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-github-square fa-2x text-danger"></i>
+                            </a>
                         </div>
-                    </div>
-                    <div id="message" class="col-12 card-body text-light h3">
-                        Match the Number
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="cards" class="row card-container">
-        <img id="clubs" src="assets/images/clubs.svg" alt="img-thumbnail">
-        <img id="diamonds" src="assets/images/diamonds.svg" alt="img-thumbnail">
-        <img id="spades" src="assets/images/spades.svg" alt="img-thumbnail">
-        <img id="hearts" src="assets/images/hearts.svg" alt="img-thumbnail">
+    <div id="game-container">
+        <div class="container">
+            <div class="row text-col">
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card border-dark">
+                        <div class="card-header border-dark text-light">
+                            NUMBER
+                        </div>
+                        <div id="number" class="card-body h3">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card border-dark">
+                        <div class="card-header border-dark text-light">
+                            SCORE
+                        </div>
+                        <div id="score" class="card-body h3">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card border-dark">
+                        <div class="card-header border-dark text-light">
+                            WINS
+                        </div>
+                        <div id="wins" class="card-body h3">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card border-dark">
+                        <div class="card-header border-dark text-light">
+                            LOSSES
+                        </div>
+                        <div id="losses" class="card-body h3">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="col-12 card-body text-light message-holder">
+                    <h3 id="message">Match the Number</h3>
+                </div>
+            </div>
+        </div>
+        <div id="cards" class="row card-container">
+            <img id="clubs" src="assets/images/clubs.svg" alt="img-thumbnail">
+            <img id="diamonds" src="assets/images/diamonds.svg" alt="img-thumbnail">
+            <img id="spades" src="assets/images/spades.svg" alt="img-thumbnail">
+            <img id="hearts" src="assets/images/hearts.svg" alt="img-thumbnail">
+        </div>
     </div>
+    <img id="open-info" src="assets/images/info.svg" alt="Game Info">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <script src="assets/javascript/game.js"></script>
 </body>
 </html>

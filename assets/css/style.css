@@ -1,5 +1,4 @@
 * {
-    /* margin: 0; */
     text-align: center;
     font-family: 'Varela Round', sans-serif;
 }
@@ -7,7 +6,54 @@
 body {
     background-color: #007e33;
     height: 100vh;
+    width: 100vw;
     overflow: hidden;
+}
+
+.logo-bg {
+    background: #007e33 url("../images/CardGameLogo.svg") no-repeat center;
+    background-size: contain;
+}
+
+/* ========== animation ========== */
+
+#animation {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* ============ game info ========== */
+
+#info-container {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+#close-info {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+#info-container .card-body {
+    overflow: scroll;
+    /* position: relative; */
+}
+
+#creator-links {
+    margin-top: 10vh;
+}
+
+#creator-links  i {
+    margin: 0 2vw;
+    color: #cc0000;
+}
+
+#creator-links img {
+    height: 28px;
+    display: inline-block;
+    margin-top: -15px;
+    box-shadow: none;
 }
 
 /* ========== text-col ========== */
@@ -17,7 +63,6 @@ body {
 }
 
 .card {
-    /* margin: 3vh 0; */
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.8);
 }
 
@@ -25,7 +70,18 @@ body {
     background-color: #cc0000;
 }
 
+.message-holder {
+    height: 80px;
+}
+
 /* ========== card-col ========== */
+
+#cards {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
 
 img {
     margin: auto;
@@ -72,18 +128,37 @@ img {
     -webkit-transform: translate(-70%, 30%) rotate(35deg);
 }
 
+/* ========== game-info ========== */
+
+#open-info {
+    /* box-shadow: none; */
+    border-radius: 50%;
+    height:50px;
+    width: 50px;
+    position: fixed;
+    bottom: 2vh;
+    left: 0;
+    right: 0;
+}
 /* ========== media queries =========== */
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+
+    #info-container {
+        padding: 0;
+        height: 80vh;
+        width: 90vw;
+        margin: 10vh auto;
+    }
 
     .col-6 {
         padding-left: 0;
         padding-right: 0;
     }
 
-    .card {
-        max-width: 40vw;
+    #game-container .card {
+        width: 40vw;
         margin: 1vh auto;
     }
 
@@ -110,8 +185,10 @@ img {
 
 }
 
-/* // Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) { ... }
+@media (max-width: 991.98px) {
 
-/* // Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) { ..}
+    .col-md-6 {
+        margin: 1vw 0;
+    }
+
+}
