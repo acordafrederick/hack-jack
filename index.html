@@ -15,25 +15,27 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
+                <!-- .info-container for the info section -->
                 <div id="info-container" class="card border-dark">
                     <div class="card-header border-dark text-light">
                         THE GAME
                         <span id="close-info">
                             <i class="fas fa-times-circle fa-lg text-light"></i>
                         </span>
-                    </div>
+                    </div> <!-- .card-header -->
                     <div class="card-body">
                         <div class="col-12 h3">
                                 Instructions
                         </div>
                         <div class="container">
                             <p class="text-center">
-                                Click on the playing cards to know each of its value. Your goal is to increase your "SCORE," matching up the value of the provided "NUMBER." Every matched number increases your "WINS," exceeding the number value increases your "LOSSES." The number and the cards' values change on random each game round.
+                                Click on the playing cards to know the value of each one. Your goal is to increase your "SCORE" by matching the value of the provided "NUMBER." Every matched number increases your "WINS," and exceeding the number value increases your "LOSSES." The number and the value of each card change randomly each game round.
                             </p>
                             <p class="text-center">
-                                The key to racking up wins is to remember each of the cards' values and adding them up correctly.
-                                Unless if you're out of "LUCK," the cards' values won't add up accordingly to match the number. May the odds be with you. Play on!
+                                The key to racking up wins is to remember the value of each card and to add them up correctly.
+                                If you're out of luck, the values of the cards won't add up to match the number. May the odds be with you. Play on!
                             </p>
+                            <!-- #play-btn to start the game -->
                             <button id="play-btn" type="button" class="btn btn-danger">
                                     PLAY&nbsp;&nbsp;&nbsp;<i class="fas fa-play"></i>
                             </button>
@@ -46,18 +48,18 @@
                                 <i class="fab fa-linkedin fa-2x text-danger"></i>
                             </a>
                             <a href="https://acordafrederick.github.io/" target="_blank">
-                                <!-- <i class="fas fa-globe fa-2x text-danger"></i> -->
                                 <img src="assets/images/icon.svg" alt="Frederick Acorda Icon">
                             </a>
                             <a href="#" target="_blank">
                                 <i class="fab fa-github-square fa-2x text-danger"></i>
                             </a>
-                        </div>
-                    </div>
-                </div>
+                        </div> <!-- #creator-links -->
+                    </div> <!-- .card-body -->
+                </div> <!-- #info-container -->
             </div>
         </div>
-    </div>
+    </div> <!-- container -->
+    <!-- the actual game #game-container -->
     <div id="game-container">
         <div class="container">
             <div class="row text-col">
@@ -68,7 +70,7 @@
                         </div>
                         <div id="number" class="card-body h3">&nbsp;</div>
                     </div>
-                </div>
+                </div> <!-- number card -->
                 <div class="col-6 col-sm-6 col-md-6 col-lg-3">
                     <div class="card border-dark">
                         <div class="card-header border-dark text-light">
@@ -76,7 +78,7 @@
                         </div>
                         <div id="score" class="card-body h3">&nbsp;</div>
                     </div>
-                </div>
+                </div> <!-- score card -->
                 <div class="col-6 col-sm-6 col-md-6 col-lg-3">
                     <div class="card border-dark">
                         <div class="card-header border-dark text-light">
@@ -84,7 +86,7 @@
                         </div>
                         <div id="wins" class="card-body h3">&nbsp;</div>
                     </div>
-                </div>
+                </div> <!-- wins card -->
                 <div class="col-6 col-sm-6 col-md-6 col-lg-3">
                     <div class="card border-dark">
                         <div class="card-header border-dark text-light">
@@ -92,19 +94,21 @@
                         </div>
                         <div id="losses" class="card-body h3">&nbsp;</div>
                     </div>
-                </div>
+                </div> <!-- losses card -->
                 <div class="col-12 card-body text-light message-holder">
                     <h3 id="message">Match the Number</h3>
                 </div>
             </div>
         </div>
+        <!-- the element container the cards #cards / .card-container -->
         <div id="cards" class="row card-container">
             <img id="clubs" src="assets/images/clubs.svg" alt="img-thumbnail">
             <img id="diamonds" src="assets/images/diamonds.svg" alt="img-thumbnail">
             <img id="spades" src="assets/images/spades.svg" alt="img-thumbnail">
             <img id="hearts" src="assets/images/hearts.svg" alt="img-thumbnail">
         </div>
-    </div>
+    </div> <!-- #game-container -->
+    <!-- button for toggling info -->
     <img id="open-info" src="assets/images/info.svg" alt="Game Info">
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

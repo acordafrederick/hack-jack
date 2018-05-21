@@ -10,16 +10,11 @@ body {
     overflow: hidden;
 }
 
+/* =========== opening background ==========*/
+
 .logo-bg {
     background: #007e33 url("../images/CardGameLogo.svg") no-repeat center;
     background-size: contain;
-}
-
-/* ========== animation ========== */
-
-#animation {
-    height: 100vh;
-    width: 100vw;
 }
 
 /* ============ game info ========== */
@@ -37,7 +32,6 @@ body {
 
 #info-container .card-body {
     overflow: scroll;
-    /* position: relative; */
 }
 
 #creator-links {
@@ -70,6 +64,7 @@ body {
     background-color: #cc0000;
 }
 
+/* container of the flashing message when the player wins or loses */
 .message-holder {
     height: 80px;
 }
@@ -131,7 +126,6 @@ img {
 /* ========== game-info ========== */
 
 #open-info {
-    /* box-shadow: none; */
     border-radius: 50%;
     height:50px;
     width: 50px;
@@ -142,7 +136,7 @@ img {
 }
 /* ========== media queries =========== */
 
-/* // Extra small devices (portrait phones, less than 576px) */
+/* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 
     #info-container {
@@ -176,7 +170,7 @@ img {
 
 }
 
-/* // Small devices (landscape phones, less than 768px) */
+/* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
 
     .col-6 {
