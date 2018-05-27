@@ -6,4 +6,4 @@ Built on **HTML**, **CSS**, **Bootstrap**, **Javascript**, and  **JQuery**.
 
 ![Card Game Logo](assets/images/screenshot.png)
 
-[Memory Card Game](http://acordafrederick.github.io/memory-card-game)
+[Memory Card Game](http://acordafrederick.github.io/hack-jack)

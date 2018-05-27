@@ -13,7 +13,7 @@ body {
 /* =========== opening background ==========*/
 
 .logo-bg {
-    background: #007e33 url("../images/CardGameLogo.svg") no-repeat center;
+    background: #007e33 url("../images/HackJackLogo.svg") no-repeat center;
     background-size: contain;
 }
 
@@ -33,6 +33,11 @@ body {
 #info-container .card-body {
     height: 70vh;
     overflow: scroll;
+}
+
+#info-container .gif {
+    margin-bottom: 5vh;
+    cursor: initial;
 }
 
 #creator-links {
@@ -58,7 +63,7 @@ body {
 }
 
 .card {
-    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.8);
 }
 
 .card-header {
@@ -83,7 +88,7 @@ img {
     margin: auto;
     height: 25vw;
     display: inline-block;
-    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.8);
     cursor: pointer;
     transform-origin: center;
     -moz-transform-origin: center;
@@ -161,7 +166,7 @@ img {
         margin: auto;
         height: 35vw;
         display: inline-block;
-        box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.8);
+        box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.8);
         transform-origin: center;
         -moz-transform-origin: center;
         -ms-transform-origin: center;
